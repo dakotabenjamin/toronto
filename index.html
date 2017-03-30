@@ -11,27 +11,757 @@
   <script>
     var mymap = L.map('mapid').setView([43.65, -79.37], 13);
 
-    var geojsonFeature = [{
+    var geojsonFeature = {
+  "type": "FeatureCollection",
+  "features": [
+    {
       "type": "Feature",
-      "properties": {
-        "name": "The Penthouse",
-        "amenity": "AirBnB",
-        "description": "Our home for six days <3"
-      },
       "geometry": {
         "type": "Point",
-        "coordinates": [-79.4060526, 43.6368364]
+        "coordinates": [
+          -79.406,
+          43.636
+        ]
+      },
+      "properties": {
+        "name": "Penthouse",
+        "type": "AirBnB",
+        "description": "AirBnB",
+        "cost": ""
       }
-    }];
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.40033,
+          43.65376
+        ]
+      },
+      "properties": {
+        "name": "Kensington Market",
+        "type": "Markets",
+        "description": "Hip and Cool Place&#8482; for my fancy hipster Buba",
+        "cost": "",
+        "website": "http://www.kensington-market.ca/Default.asp?id=home&l=1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.39471,
+          43.66764
+        ]
+      },
+      "properties": {
+        "name": "Royal Ontario Museum",
+        "type": "Museums",
+        "description": "Natural History",
+        "cost": "$20",
+        "website": "http://www.rom.on.ca/en/exhibitions-galleries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.40014,
+          43.66724
+        ]
+      },
+      "properties": {
+        "name": "Bata Shoe Museum",
+        "type": "Museums",
+        "description": "But why tho",
+        "cost": "$14 but cheap on Th5-8",
+        "website": "http://www.batashoemuseum.ca/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.38203,
+          43.63842
+        ]
+      },
+      "properties": {
+        "name": "The Power Plant",
+        "type": "Museums",
+        "description": "Contemporary Art Museum",
+        "cost": "FREE",
+        "website": "http://www.thepowerplant.org/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.35959,
+          43.65031
+        ]
+      },
+      "properties": {
+        "name": "Distillery District",
+        "type": "Markets",
+        "description": "Historic Shopping and stuff!",
+        "cost": "",
+        "website": "http://www.thedistillerydistrict.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.371978,
+          43.649184
+        ]
+      },
+      "properties": {
+        "name": "St. Lawrence Market",
+        "type": "Markets",
+        "description": "Local foods!",
+        "cost": "",
+        "website": "http://www.stlawrencemarket.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.38193,
+          43.63845
+        ]
+      },
+      "properties": {
+        "name": "Harbourfront Centre",
+        "type": "Cultural",
+        "description": "Art exhibits workshops (check later for events)",
+        "cost": "",
+        "website": "http://www.harbourfrontcentre.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.1862,
+          43.8197
+        ]
+      },
+      "properties": {
+        "name": "Toronto Zoo",
+        "type": "Sight-seeing",
+        "description": "Because aminals",
+        "cost": "$20",
+        "website": "http://www.torontozoo.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.40944,
+          43.67807
+        ]
+      },
+      "properties": {
+        "name": "Casa Loma",
+        "type": "Sight-seeing",
+        "description": "Big-ass castle",
+        "cost": "$22",
+        "website": "http://www.casaloma.ca/index.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.37454,
+          43.66181
+        ]
+      },
+      "properties": {
+        "name": "Allan Gardens Conservatory",
+        "type": "Nature",
+        "description": "U kno what it is",
+        "cost": "Free",
+        "website": "http://torontobotanicalgarden.ca/get-gardening/public-gardens/allan-gardens"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.37981,
+          43.65114
+        ]
+      },
+      "properties": {
+        "name": "Cloud Gardens Conservatory",
+        "type": "Nature",
+        "description": "A downtown greenhouse!",
+        "cost": "Free",
+        "website": "http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=355cfe59abc61410VgnVCM10000071d60f89RCRD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.399,
+          43.66408
+        ]
+      },
+      "properties": {
+        "name": "Rare Books Library",
+        "type": "Cultural",
+        "description": "If you wanna look at books idk",
+        "cost": "",
+        "website": "http://www.atlasobscura.com/places/thomas-fisher-rare-books-library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.38381,
+          43.65241
+        ]
+      },
+      "properties": {
+        "name": "Nathan Phillips Square",
+        "type": "Cultural",
+        "description": "Bustling square by City Hall check later for events",
+        "cost": "",
+        "website": "http://www.toronto.com/things-to-do/attractions/nathan-phillips-square/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.38017,
+          43.6561
+        ]
+      },
+      "properties": {
+        "name": "Yonge-Dundas Square",
+        "type": "Cultural",
+        "description": "Free concerts check later for events",
+        "cost": "",
+        "website": "http://www.ydsquare.ca/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.391462,
+          43.645398
+        ]
+      },
+      "properties": {
+        "name": "The Second City Improv Show",
+        "type": "Nightlife",
+        "description": "Cheer up for bad weather",
+        "cost": "$26",
+        "website": "http://www.secondcity.com/toronto/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.14803,
+          43.46898
+        ]
+      },
+      "properties": {
+        "name": "Aberfoyle Antique Market",
+        "type": "Cultural",
+        "description": "Get out into the countryside on a Sunday",
+        "cost": "$2",
+        "website": "http://aberfoyleantiquemarket.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.6283,
+          43.8438
+        ]
+      },
+      "properties": {
+        "name": "Kleinburg Village",
+        "type": "Cultural",
+        "description": "Get out into the countryside!",
+        "cost": "",
+        "website": "http://www.kleinburgvillage.ca/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3808,
+          43.6155
+        ]
+      },
+      "properties": {
+        "name": "Centre Island",
+        "type": "Nature",
+        "description": "Frolic! Picnic! Gross couples pictures!",
+        "cost": "",
+        "website": "http://www.centreisland.ca/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.2247,
+          43.7182
+        ]
+      },
+      "properties": {
+        "name": "Scarborough Bluffs",
+        "type": "Nature",
+        "description": "Scenic Geological Wonder also sculptures?",
+        "cost": "",
+        "website": "http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=0519dada600f0410VgnVCM10000071d60f89RCRD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4644,
+          43.6456
+        ]
+      },
+      "properties": {
+        "name": "High Park",
+        "type": "Nature",
+        "description": "Park that has events sometimes and a bird sanctuary",
+        "cost": "",
+        "website": "http://highparktoronto.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.1543,
+          43.8116
+        ]
+      },
+      "properties": {
+        "name": "Rouge Park",
+        "type": "Nature",
+        "description": "Largest urban park in NA with hiking and scenery and shit",
+        "cost": "",
+        "website": "http://www.rougepark.com/index.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3359,
+          43.7056
+        ]
+      },
+      "properties": {
+        "name": "E.T. Seton Park",
+        "type": "Nature",
+        "description": "More parks!",
+        "cost": "",
+        "website": "http://torontoparks.com/seton.html"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.44304,
+          43.65075
+        ]
+      },
+      "properties": {
+        "name": "West Toronto Railpath",
+        "type": "Cultural",
+        "description": "Unique views of the industrial parts of Toronto",
+        "cost": "",
+        "website": "https://railpath.ca/map/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.6083,
+          43.7265
+        ]
+      },
+      "properties": {
+        "name": "Humber Arboretum",
+        "type": "Nature",
+        "description": "TRees n shit",
+        "cost": "",
+        "website": "http://humberarboretum.on.ca/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4759,
+          43.6279
+        ]
+      },
+      "properties": {
+        "name": "Humber Bay Butterfly Habitat",
+        "type": "Nature",
+        "description": "4 acres of smol flappers",
+        "cost": "",
+        "website": "http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=95e8dada600f0410VgnVCM10000071d60f89RCRD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9429,
+          43.7756
+        ]
+      },
+      "properties": {
+        "name": "Cheltenham Badlands",
+        "type": "Nature",
+        "description": "A nice daytrip with beautiful red hills",
+        "cost": "",
+        "website": "https://www.day-trips.ca/content/cheltenham-badlands"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.37182,
+          43.64873
+        ]
+      },
+      "properties": {
+        "name": "Carousel Bakery",
+        "type": "Cafes and Bakeries",
+        "description": "Portuguese bakery famous for peameal sandwich",
+        "cost": "$",
+        "website": "http://www.blogto.com/bakery/carouselbakery/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.39982,
+          43.6553
+        ]
+      },
+      "properties": {
+        "name": "Little Pebbles",
+        "type": "Cafes and Bakeries",
+        "description": "Food is smol and round",
+        "cost": "$$",
+        "website": "http://www.blogto.com/bakery/little-pebbles-toronto/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.39948,
+          43.65726
+        ]
+      },
+      "properties": {
+        "name": "Mother's Dumplings",
+        "type": "Chinese Goodness",
+        "description": "You know",
+        "cost": "$$",
+        "website": "http://www.mothersdumplings.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.39834,
+          43.65297
+        ]
+      },
+      "properties": {
+        "name": "Chinese Traditional Buns",
+        "type": "Chinese Goodness",
+        "description": "SOUP DUMPLINGS",
+        "cost": "$",
+        "website": "http://foodio54.com/restaurant/Toronto-ON/13ce1e/Chinese-Traditional-Food-Company"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.39964,
+          43.65771
+        ]
+      },
+      "properties": {
+        "name": "One Hour Cafeteria",
+        "type": "Chinese Goodness",
+        "description": "Yunnan Cuisine",
+        "cost": "$$",
+        "website": "https://onehourcafeteria.wordpress.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.36692,
+          43.6517
+        ]
+      },
+      "properties": {
+        "name": "Mangia et Bevi",
+        "type": "Food",
+        "description": "Pizza and homemade pasta",
+        "cost": "$$",
+        "website": "http://www.mbresto.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.46737,
+          43.66529
+        ]
+      },
+      "properties": {
+        "name": "The Beet",
+        "type": "Food",
+        "description": "Hippie Localvore food",
+        "cost": "$$",
+        "website": "http://www.thebeet.ca/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.42127,
+          43.6396
+        ]
+      },
+      "properties": {
+        "name": "Koja",
+        "type": "Food",
+        "description": "Sushi/Korean food",
+        "cost": "$$",
+        "website": "https://www.zomato.com/toronto/koja-liberty-village"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.39365,
+          43.64641
+        ]
+      },
+      "properties": {
+        "name": "Khao san Road",
+        "type": "Food",
+        "description": "Thai food",
+        "cost": "$$",
+        "website": "http://www.khaosanroad.ca/main"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3795117,
+          43.6514803
+        ]
+      },
+      "properties": {
+        "name": "Richmond Station",
+        "type": "Food",
+        "description": "Upscale but has a fixed price slow roast on saturday",
+        "cost": "$$$ or $21CAD",
+        "website": "http://richmondstation.ca/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3734464,
+          43.6484394
+        ]
+      },
+      "properties": {
+        "name": "C'est What",
+        "type": "Brews",
+        "description": "Beer food and music",
+        "cost": "$$",
+        "website": "http://cestwhat.ca/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.40157,
+          43.6545
+        ]
+      },
+      "properties": {
+        "name": "Thirsty and Miserable",
+        "type": "Brews",
+        "description": "Punkrock beer bar with great selection",
+        "cost": "$$",
+        "website": "http://www.blogto.com/bars/thirsty-and-miserable-toronto/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.38849,
+          43.65054
+        ]
+      },
+      "properties": {
+        "name": "The Rex Jazz & Blues Bar",
+        "type": "Nightlife",
+        "description": "Casual nighttime activity",
+        "cost": "$$",
+        "website": "http://www.therex.ca/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3972573,
+          43.6484471
+        ]
+      },
+      "properties": {
+        "name": "The Burger's Priest",
+        "type": "Food",
+        "description": "Burgers burgers burgers",
+        "cost": "$$",
+        "website": "http://theburgerspriest.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3941071,
+          43.6875909
+        ]
+      },
+      "properties": {
+        "name": "Holy Chuck",
+        "type": "Food",
+        "description": "Burgers burgers burgers",
+        "cost": "$$",
+        "website": "http://holychuckburgers.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.40856,
+          43.65609
+        ]
+      },
+      "properties": {
+        "name": "Snakes and Lattes",
+        "type": "Food",
+        "description": "Another bad weather option",
+        "cost": "$$ and $5 cover",
+        "website": "https://www.snakesandlattes.com/"
+      }
+    }
+  ]
+}
 
     var geojsonMarkerOptions = {
       radius: 8,
-      fillColor: "#ff7800",
       color: "#000",
       weight: 1,
       opacity: 1,
       fillOpacity: 0.8
     };
+
+    function onEachFeature(feature, layer) {
+      var popUpContent = "<h4>" + feature.properties.name +
+        "</h4> <p>" + feature.properties.description + "</p><p> Cost: " +
+        feature.properties.cost + "</p>";
+
+      layer.bindPopup(popUpContent);
+    }
 
     L.tileLayer('https://api.mapbox.com/styles/v1/dakotabenjamin/cj0vk0j9800ht2smren3g2umv/tiles/256/{z}/{x}/{y}?access_token={access_token}', {
 		    maxZoom: 18,
@@ -42,19 +772,36 @@
         access_token: 'pk.eyJ1IjoiZGFrb3RhYmVuamFtaW4iLCJhIjoiZHBDSU1xVSJ9.m1aHG5iHw_ozT65TcJ4eKQ'
 	  }).addTo(mymap);
 
-    L.geoJson(geojsonFeature, {
+    mylayer = L.geoJson(geojsonFeature, {
       pointToLayer: function (feature, latlng) {
         return L.circleMarker(latlng, geojsonMarkerOptions);
       },
       style: function (feature) {
-        switch (feature.properties.amenity) {
-          case 'AirBnB': return {color: "#ff0000"};
+        switch (feature.properties.type) {
+          case 'AirBnB': return {color: "#ff0000", fillColor: "#ff7800"};
+          case 'Food': return {color: "darkgrey", fillColor:"orange"};
+          case 'Markets': return {color: "darkgrey", fillColor:"purple"};
+          case 'Museums': return {color: "darkgrey", fillColor:"lightblue"};
+          case 'Cultural': return {color: "darkgrey", fillColor:"white"};
+          case 'Sight-seeing': return {color: "darkgrey", fillColor:"teal"};
+          case 'Nature': return {color: "darkgreen", fillColor:"green"};
+          case 'Cafes and Bakeries': return {color: "darkgrey", fillColor:"yellow"};
+          case 'Chinese Goodness': return {color: "darkgrey", fillColor:"darkred"};
+          case 'Brews': return {color: "darkgrey", fillColor:"darkbrown"};
+          case 'Nightlife': return {color: "darkgrey", fillColor:"navy"};
         }
       },
-      onEachFeature: function (feature, layer) {
-        layer.bindPopup(feature.properties.description);
-      },
+      onEachFeature: onEachFeature,
 
-    }).addTo(mymap);
+    });
+
+    mylayer.addTo(mymap);
+    mylayer.on('mouseover', function(e) {
+      e.layer.openPopup();
+    });
+    mylayer.on('mouseout', function(e) {
+      e.layer.closePopup();
+    });
+
     </script>
 </body>
